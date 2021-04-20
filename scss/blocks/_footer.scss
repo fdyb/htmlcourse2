@@ -1,0 +1,11 @@
+.footer {
+    @include flex-evenly;
+    height: 79px;
+    background-color: $dark-blue;
+    color: $white;
+
+    &__item {
+        margin: 0px 3px;
+        display: inline-flex;
+    }
+}

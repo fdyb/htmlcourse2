@@ -1,0 +1,25 @@
+.promo {
+    display: flex;
+    margin: 0 0 63px;
+
+    &__heading-wrapper {
+        background-color: $pink;
+        flex-grow: 1;
+        align-items: center;
+        display: flex;
+        padding: 0 0 0 92px;
+    }
+
+    &__heading {
+        @include font($dark-blue, 48px, 58px, 900, normal, uppercase);
+    }
+
+    &__sub-heading {
+        @include font($dark-blue, 32px, 38px, 700, normal, uppercase);
+        display: block;
+    }
+
+    &__sub-heading-pink {
+        color: $dark-pink;
+    }
+}

@@ -1,0 +1,158 @@
+/* REGISTRATION */
+
+.cart-header {
+    width: 100%;
+    min-height: 148px;
+    background-color: $pink;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        @include font($dark-pink, 24px, 29px, 400, normal, uppercase);
+    }
+}
+
+.cart-content {
+    display: flex;
+    padding: 96px 0px;
+
+    &__goods {
+        margin-right: 128px;
+    }
+
+    &__goods-item {
+        width: 652px;
+        height: 306px;
+        display: flex;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    &__goods-item-description {
+        padding: 22px 31px;
+    }
+
+    &__goods-item-close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 18px;
+        height: 18px;
+        background-image: url("../img/close-icon.svg");
+        background-size: 18px 18px;
+    }
+
+    &__goods-item-title {
+        @include font($dark-blue, 24px, 29px, 400, normal, uppercase);
+        margin-bottom: 42px;
+    }
+
+    &__goods-item-data {
+        @include font($dark-grey, 22px, 26px, 400, normal);
+        margin-bottom: 6px;
+    }
+
+    &__goods-item-price {
+        color: $dark-pink;
+        
+    }
+
+    &__goods-item-size {
+        color: $grey;
+        text-transform: uppercase;
+    }
+
+    &__goods-item-color {
+        color: $grey;
+        text-transform: capitalize;
+    }
+
+    &__goods-item-quantity {
+        @include font($grey, 18px, 22px, 400, normal);
+        display: inline-block;
+        border: 1px solid $span-border;
+        padding: 2px 15px;
+        margin-left: 24px;
+    }
+
+    &__goods-commands {
+        @include flex-between;
+        
+    }
+
+    &__goods-commands-button {
+        padding: 17px 40px;
+        border: 1px solid $btn-border;
+        @include font($dark-grey, 14px, 17px, 300, normal, uppercase);
+        background-color: transparent;
+    }
+
+    &__form-box {
+        flex-direction: column;
+        min-width: 488px;
+    }
+
+    &__form {
+        flex-direction: column;
+        max-width: 362px;
+    }
+
+    &__form-legend {
+        @include font($dark-blue, 16px, 19px, 300, normal, uppercase);
+        margin-bottom: 20px;
+    }
+
+    &__form-input {
+        min-height: 45px;
+        min-width: 360px;
+        border: 1px solid $grey;
+        margin-bottom: 20px;
+        padding-left: 13px;
+        outline: none;
+    }
+
+    &__form-button {
+        padding: 10px 15px;
+        border: 1px solid $btn-border;
+        background-color: transparent;
+        @include font($dark-grey, 11px, 13px, 300, normal, uppercase);
+    }
+
+    &__form-total-box {
+        margin-top: 57px;
+        padding: 39px 34px;
+        background-color: $grey-bk; 
+        text-align: center;
+    }
+
+    &__form-subtotal {
+        @include font($dark-grey, 11px, 13px, 300, normal, uppercase);
+        margin-bottom: 12px;
+        text-align: right;
+    }
+
+    &__form-grandtotal {
+        @include font($dark-grey, 16px, 19px, 300, normal, uppercase);
+        margin-bottom: 21px;
+        text-align: right;
+    }
+
+    &__form-grandtotal-price {
+        color: $dark-pink;
+    }
+
+    &__form-submit {
+        padding: 15px 43px;
+        background: $dark-pink;
+        @include font($white, 14px, 17px, 400, normal, uppercase);
+        border: none;
+        box-sizing: border-box;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+        margin-top: 17px;
+    }
+
+}

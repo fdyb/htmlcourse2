@@ -1,0 +1,124 @@
+/* REGISTRATION */
+
+.registration-header {
+    width: 100%;
+    min-height: 148px;
+    background-color: $pink;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        @include font($dark-pink, 24px, 29px, 400, normal, uppercase);
+    }
+}
+
+.registration-content {
+    display: flex;
+    padding: 64px 0px;
+
+
+    &__form-box {
+        flex-direction: column;
+        min-width: 488px;
+    }
+
+    &__form {
+        flex-direction: column;
+        max-width: 362px;
+    }
+
+    &__text {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &__form-legend {
+        border: none;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: $dark-blue;
+        margin-bottom: 20px;
+    }
+
+    &__form-input {
+        min-height: 45px;
+        min-width: 360px;
+        border: 1px solid $light-grey;
+        margin-bottom: 20px;
+        padding-left: 13px;
+        outline: none;
+    }
+
+    &__form-misc {
+        @include font($light-grey, 13px, 16px, 300, normal);
+        margin-bottom: 20px;
+    }
+
+    &__form-submit {
+        padding: 15px 43px;
+        background: $dark-pink;
+        @include font($white, 14px, 17px, 400, normal, uppercase);
+        border: none;
+        box-sizing: border-box;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__text-heading {
+        @include font($dark-blue, 24px, 29px, 300, normal, uppercase);
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+
+    &__text-misc,
+    &__text-list-item {
+        @include font($dark-blue, 24px, 29px, 300, normal);
+        margin-bottom: 21px;
+    }
+
+    &__text-list-item {
+        position: relative;
+        margin-left: 25px;
+    }
+
+    &__text-list-item:before {
+        content: '';
+        width: 20px;
+        height: 16px;
+        position: absolute;
+        top: 5px;
+        left: -25px;
+        background-image: url("../img/v-icon.svg");
+        background-size: 20px 16px;
+    }
+
+    &__form-radio-label {
+        @include font($dark-blue, 11px, 13px, 300, normal);
+        margin-right: 34px;
+        position: relative;
+    }
+
+    &__form-radio-label:before {
+        content: '';
+        width: 17px;
+        height: 17px;
+        border: 1px solid $light-grey;
+        border-radius: 50%;
+        position: absolute;
+        left: -25px;
+        background-color: transparent;
+    }
+
+    input[type="radio"]:checked+label:before {
+        background-color: $light-grey;
+    }
+
+    #registration-content__form-sex-selection {
+        margin-left: 25px;
+        margin-bottom: 33px;
+    }
+
+}

@@ -1,0 +1,26 @@
+@mixin font($color: white, $size: 14px, $line-height: 17px, $weight: 400, $style: normal, $transform: none) {
+    color: $color;
+    font-size: $size;
+    line-height: $line-height;
+    font-weight: $weight;
+    font-style: $style;
+    text-transform: $transform;
+}
+
+@mixin flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

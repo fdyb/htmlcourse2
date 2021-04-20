@@ -1,0 +1,77 @@
+.subscribe {
+    min-height: 448px;
+    width: 100%;
+    background-image: url(../img/subscribe-background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__item {
+        min-height: 225px;
+        width: 360px;
+        margin: 0px 15px;
+        flex-direction: column;
+        padding: 15px;
+        display: inline-flex;
+        min-height: 134px;
+        width: 360px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item-formbox {
+        width: 560px;
+    }
+
+    &__item-text {
+        @include font($dark-blue, 20px, 24px, 400, normal, uppercase);
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &__item-text>span {
+        font-style: italic;
+    }
+
+    &__form-heading {
+        @include font($dark-blue, 24px, 40px, 700, normal, uppercase);
+        text-align: center;
+    }
+
+    &__form-text {
+        @include font($dark-blue, 18px, 30px, 400, normal, uppercase);
+        text-align: center;
+    }
+
+    &__form-field {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    &__form-field--email {
+        border-bottom-left-radius: 13px;
+        border-top-left-radius: 13px;
+        padding: 0px 13px;
+        width: 256px;
+        height: 49px;
+        background: $white;
+        border: none;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.25);
+    }
+
+    &__form-button--subscribe {
+        border-bottom-right-radius: 13px;
+        border-top-right-radius: 13px;
+        padding: 0px 13px;
+        width: 100px;
+        height: 49px;
+        background: $dark-pink;
+        color: $white;
+        border: none;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.25);
+    }
+}
