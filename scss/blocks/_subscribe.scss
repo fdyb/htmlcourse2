@@ -7,6 +7,30 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include tablet {
+        min-height: 614px;
+    }
+
+    @include mobile {
+        min-height: 614px;
+    }
+
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        @include mobile {
+            justify-content: center;
+        }
+    }
 
     &__item {
         min-height: 225px;

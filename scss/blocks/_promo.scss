@@ -2,21 +2,64 @@
     display: flex;
     margin: 0 0 63px;
 
+    @include tablet {
+        margin: 0 0 20px;
+    }
+
+    @include tablet {
+        margin: 0 0 64px;
+    }
+
     &__heading-wrapper {
         background-color: $pink;
         flex-grow: 1;
         align-items: center;
         display: flex;
-        padding: 0 0 0 92px;
+        padding: 0 0 0 92px; 
+
+        @include tablet {
+            padding: 0 0 0 68px;
+        }
+
+        @include mobile {
+            min-height: 363px;
+            padding: 0 0 0 83px;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        height: auto;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__heading {
         @include font($dark-blue, 48px, 58px, 900, normal, uppercase);
+       
+        @include tablet {
+            @include font($dark-blue, 44px, 52px, 900, normal, uppercase); 
+        }
+
+        @include mobile {
+            @include font($dark-blue, 38px, 46px, 900, normal, uppercase); 
+            
+        }
     }
 
     &__sub-heading {
         @include font($dark-blue, 32px, 38px, 700, normal, uppercase);
         display: block;
+
+        @include tablet {
+            @include font($dark-blue, 24px, 29px, 700, normal, uppercase); 
+        }
+
+        @include mobile {
+            @include font($dark-blue, 20px, 24px, 700, normal, uppercase); 
+        }
     }
 
     &__sub-heading-pink {

@@ -5,6 +5,30 @@
     align-items: center;
     margin-top: 95px;
     min-height: 340px;
+    @include tablet {
+        min-height: 610px;
+    }
+
+    @include mobile {
+        min-height: 610px;
+    }
+
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        @include mobile {
+            justify-content: center;
+        }
+    }
 
     &__item {
         margin: 0px 15px;

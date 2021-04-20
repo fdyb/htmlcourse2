@@ -2,6 +2,14 @@
     margin-top: 96px;
     text-align: center;
 
+    @include tablet {
+        margin-top: 154px;
+    }
+
+    @include mobile {
+        margin-top: 64px;
+    }
+
     &__item {
         &:hover {
             .products__item-img--mask {
@@ -31,6 +39,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        @include mobile {
+            justify-content: center;
+        }
     }
 
     &__item {

@@ -12,7 +12,17 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-size: cover;
 
+        @include tablet {
+            width: 32%;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+            margin-bottom: 47px;
+        }
 
         &--women {
             background-image: url(../img/categories-women.jpg);
@@ -31,6 +41,17 @@
             background-image: url(../img/categories-accesories.jpg);
             width: 100%;
             min-height: 180px;
+
+            @include tablet {
+                min-height: 116px;
+                margin-top: 20px;
+            }
+
+            @include mobile {
+                min-height: 111px;
+                margin-top: 0px;
+            }
+
         }
 
     }
