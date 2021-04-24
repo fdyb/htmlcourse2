@@ -1,0 +1,133 @@
+/* REGISTRATION */
+
+.product-header {
+    width: 100%;
+    min-height: 148px;
+    background-color: $pink;
+    display: flex;
+    align-items: center;
+
+    &__box {
+        @include flex-between;
+    }
+
+    &__title {
+        @include font($dark-pink, 24px, 29px, 400, normal, uppercase);
+    }
+}
+
+.product-content {
+    @include flex-column;
+    padding: 64px 0px;
+    margin-top: -64px;
+    position: relative;
+    border: 1px solid $span-border;
+    background-color: #fff;
+
+    &__level {
+        @include font($dark-pink, 14px, 17px, 300, normal, uppercase); 
+    }
+
+    &__bar {
+        width: 63px;
+        height: 3px;
+        position: relative;
+        border: none;
+        background-color: $dark-pink;
+        margin: 12px 0 12px 00;
+    }
+
+    &__name {
+        @include font($dark-grey, 18px, 22px, 300, normal, uppercase); 
+        margin-bottom: 48px;
+    }
+
+    &__misc {
+        @include font($dark-grey, 14px, 17px, 300, normal);
+        max-width: 555px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    &__price {
+        @include font($dark-pink, 24px, 29px, 300, normal);
+    }
+
+    &__divider {
+        border: none;
+        background-color: $span-border;
+        height: 1px;
+        min-width: 642px;
+        margin: 64px 0 64px 0;
+    }
+
+    &__props {
+        @include flex-around;
+    }
+
+    &__props-group {
+        position: relative;
+    }
+
+    &__props-selector {
+        @include font($dark-grey, 14px, 17px, 400, normal, uppercase);
+        margin-right: 23px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        &:hover+.product-content__props-options {
+            display: block;
+        }
+    }
+
+    &__props-options {
+        display: none;
+        position: absolute;
+        bottom: 20px;
+        border: 1px solid $span-border;
+        border-radius: 3px;
+        list-style: none;
+        padding: 7px;
+        min-width: 96%;
+        &:hover {
+            display: block;
+        }
+    }
+    
+    &__props-options-item {
+        @include font($dark-pink, 16px, 19px, 400, normal);
+        padding: 7px 0 7px 5px;
+        cursor: pointer;
+        &:hover {
+            color: #fff;
+            background-color: $grey;
+        }
+    }
+
+    &__add-to-cart-button {
+        min-width: 212px;
+        min-height: 48px;
+        border: 1px solid $dark-pink;
+        @include font($dark-pink, 16px, 19px, 400, normal);
+        background-color: transparent;
+        margin-top: 64px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 24px;
+            background-image: url(/img/cart-icon-pink.svg);
+            background-size: 26px 24px;
+            background-repeat: no-repeat;
+            width: 26px;
+            height: 24px;
+        }
+    }
+
+    
+
+}
+
+.product-footer {
+    margin-bottom: 128px;
+}

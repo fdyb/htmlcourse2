@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/lato-300.woff) format("woff"), url(../fonts/lato-300.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/lato-400.woff) format("woff"), url(../fonts/lato-400.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/lato-italic-400.woff) format("woff"), url(../fonts/lato-italic-400.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/lato-700.woff) format("woff"), url(../fonts/lato-700.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/lato-900.woff) format("woff"), url(../fonts/lato-900.woff2) format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -119,6 +154,50 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.breadcrumb-item {
+  text-transform: uppercase;
+}
+
+.breadcrumb-item > a {
+  text-decoration: none;
+  color: #636363;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.breadcrumb-item.active {
+  color: #F16D7D;
+  font-weight: 700;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 47px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: rgba(42, 42, 42, 0.15);
+  width: 47px;
+  height: 47px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(/img/slider-arrow-left-icon.svg);
+}
+
+.carousel-control-next-icon {
+  background-image: url(/img/slider-arrow-right-icon.svg);
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+  color: #F16D7D;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
 }
 
 @media (max-width: 1600px) {
@@ -659,6 +738,211 @@ body {
   background-color: transparent;
   text-align: center;
   margin-top: 48px;
+}
+
+/* REGISTRATION */
+.product-header {
+  width: 100%;
+  min-height: 148px;
+  background-color: #F1E4E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-header__title {
+  color: #F16D7D;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.product-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 64px 0px;
+  margin-top: -64px;
+  position: relative;
+  border: 1px solid #EAEAEA;
+  background-color: #fff;
+}
+
+.product-content__level {
+  color: #F16D7D;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.product-content__bar {
+  width: 63px;
+  height: 3px;
+  position: relative;
+  border: none;
+  background-color: #F16D7D;
+  margin: 12px 0 12px 00;
+}
+
+.product-content__name {
+  color: #575757;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.product-content__misc {
+  color: #575757;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+  max-width: 555px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.product-content__price {
+  color: #F16D7D;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+}
+
+.product-content__divider {
+  border: none;
+  background-color: #EAEAEA;
+  height: 1px;
+  min-width: 642px;
+  margin: 64px 0 64px 0;
+}
+
+.product-content__props {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-content__props-group {
+  position: relative;
+}
+
+.product-content__props-selector {
+  color: #575757;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-right: 23px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.product-content__props-selector:hover + .product-content__props-options {
+  display: block;
+}
+
+.product-content__props-options {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  border: 1px solid #EAEAEA;
+  border-radius: 3px;
+  list-style: none;
+  padding: 7px;
+  min-width: 96%;
+}
+
+.product-content__props-options:hover {
+  display: block;
+}
+
+.product-content__props-options-item {
+  color: #F16D7D;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  padding: 7px 0 7px 5px;
+  cursor: pointer;
+}
+
+.product-content__props-options-item:hover {
+  color: #fff;
+  background-color: #6F6E6E;
+}
+
+.product-content__add-to-cart-button {
+  min-width: 212px;
+  min-height: 48px;
+  border: 1px solid #F16D7D;
+  color: #F16D7D;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  background-color: transparent;
+  margin-top: 64px;
+  position: relative;
+}
+
+.product-content__add-to-cart-button::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  background-image: url(/img/cart-icon-pink.svg);
+  background-size: 26px 24px;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 24px;
+}
+
+.product-footer {
+  margin-bottom: 128px;
 }
 
 .services {
