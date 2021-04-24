@@ -1,0 +1,16 @@
+.footer {
+    @include flex-evenly;
+    min-height: 79px;
+    background-color: $dark-blue;
+    color: $white;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        min-height: 143px;
+    }
+
+    &__item {
+        margin: 0px 3px;
+        display: inline-flex;
+    }
+}

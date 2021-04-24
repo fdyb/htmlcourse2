@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
@@ -75,62 +75,58 @@
         </div>
     </header>
     <main>
-        <section class = "registration-header">
+        <section class = "cart-header">
             <div class = "container">
-               <h1 class = "registration-header__title"> registration </h1>
-
-               
+                <h1 class = "cart-header__title"> shopping cart </h1>
             </div>
         </section>
-        <section class="registration-content container">
-            <div class="registration-content__form-box">
-                <form class="registration-content__form">
-                    <fieldset>
-                        <legend class = "registration-content__form-legend">Your Name</legend>
-                        <input class = "registration-content__form-input" type="text" name="first-name" id="first-name" placeholder="First Name">
-                        <input class = "registration-content__form-input" type="text" name="last-name" id="last-name" placeholder="Last Name">
-                        <fieldset id = "registration-content__form-sex-selection">
-                            <input type="radio" name ="sex" id = "radio-male" hidden>
-                            <label class = "registration-content__form-radio-label" for = "radio-male"> Male </label>
-                            <input type="radio" name ="sex" id = "radio-female" hidden>
-                            <label class = "registration-content__form-radio-label" for = "radio-female"> Female </label>
-                            <input type="radio" name ="sex" id = "radio-other" hidden>
-                            <label class = "registration-content__form-radio-label" for = "radio-other"> Other </label>
-                        </fieldset>
-                    </fieldset>
-                    <fieldset >
-                        <legend class = "registration-content__form-legend"> Login details</legend>
-                        <input class = "registration-content__form-input" type="email" name="email" id="email" placeholder="Email">
-                        <input class = "registration-content__form-input" type="password" name="psw" id="psw" placeholder="Password">
-                        <p class = "registration-content__form-misc">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                    </fieldset>
-                    <button class = "registration-content__form-submit" type="submit">join now
-                        <img src="./img/arrow.svg" alt="arrow-right" width="17" height="10">
-                    </button>
-                </form>
-            </div>
-            <div class="registration-content__text">
-                <h2 class="registration-content__text-heading">loyalty has its perks</h2>
-                <div class="registration-content__text-misc">
-                    Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
-                </div>
-                <ul class = "registration-content__text-list">
-                    <li class = "registration-content__text-list-item">
-                        15% off welcome offer
+        <section class="cart-content container">
+            <div class="cart-content__goods">
+                <ul class="cart-content__goods-list">
+                    <li class="cart-content__goods-item">
+                        <div class="cart-content__goods-item-close"></div>
+                        <img src="./img/cart-product-1.jpg" alt="cart-product-1">
+                        <div class = "cart-content__goods-item-description">
+                            <h2 class="cart-content__goods-item-title">mango  people  t-shirt</h2>
+                            <p class = "cart-content__goods-item-data">Price: <span class = "cart-content__goods-item-price">$300</span>	</p>
+                            <p class = "cart-content__goods-item-data">Color: <span class = "cart-content__goods-item-color">red</span></p>
+                            <p class = "cart-content__goods-item-data">Size: <span class = "cart-content__goods-item-size">xl</span></p>
+                            <p class = "cart-content__goods-item-data">Quantity: <span class = "cart-content__goods-item-quantity">2</span></p>
+                        </div>
                     </li>
-                    <li class = "registration-content__text-list-item">
-                        Free shipping, returns and exchanges on all orders
-                    </li>
-                    <li class = "registration-content__text-list-item">
-                        $10 off a purchase on your birthday
-                    </li>
-                    <li class = "registration-content__text-list-item">
-                        Early access to products
-                    </li>
-                    <li class = "registration-content__text-list-item">
-                        Exclusive offers & rewards
+                    <li class="cart-content__goods-item">
+                        <div class="cart-content__goods-item-close"></div>
+                        <img src="./img/cart-product-2.jpg" alt="cart-product-2">
+                        <div class = "cart-content__goods-item-description">
+                            <h2 class="cart-content__goods-item-title">mango  people  t-shirt</h2>
+                            <p class = "cart-content__goods-item-data">Price: <span class = "cart-content__goods-item-price">$300</span>	</p>
+                            <p class = "cart-content__goods-item-data">Color: <span class = "cart-content__goods-item-color">red</span></p>
+                            <p class = "cart-content__goods-item-data">Size: <span class = "cart-content__goods-item-size">xl</span></p>
+                            <p class = "cart-content__goods-item-data">Quantity: <span class = "cart-content__goods-item-quantity">2</span></p>
+                        </div>
                     </li>
                 </ul>
+                <div class = "cart-content__goods-commands">
+                    <button class = "cart-content__goods-commands-button" type="button">clear shopping cart</button>
+                    <button class = "cart-content__goods-commands-button" type="button">continue shopping</button>
+                </div>
+            </div>
+            <div class="cart-content__form-box">
+                <form class="cart-content__form">
+                    <fieldset>
+                        <legend class = "cart-content__form-legend">shipping adress</legend>
+                        <input class = "cart-content__form-input" type="text" name="adr-1" id="adr-1" placeholder="Bangladesh">
+                        <input class = "cart-content__form-input" type="text" name="adr-2" id="adr-2" placeholder="State">
+                        <input class = "cart-content__form-input" type="text" name="adr-3" id="adr-3" placeholder="Postcode / Zip">
+                        <button class = "cart-content__form-button" type="button">get a quote</button>
+                    </fieldset>
+                    <fieldset class = "cart-content__form-total-box">
+                        <p class = "cart-content__form-subtotal">sub total $900</p>
+                        <p class = "cart-content__form-grandtotal">grand total <span class = "cart-content__form-grandtotal-price">$900</span></p>
+                        <hr>
+                        <button class = "cart-content__form-submit" type="submit">proceed to checkout</button>
+                    </fieldset>
+                </form>
             </div>
         </section>
     </main>

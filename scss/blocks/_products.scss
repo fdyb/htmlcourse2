@@ -1,0 +1,117 @@
+.products {
+    margin-top: 96px;
+    text-align: center;
+
+    @include tablet {
+        margin-top: 154px;
+    }
+
+    @include mobile {
+        margin-top: 64px;
+    }
+
+    &__item {
+        &:hover {
+            .products__item-img--mask {
+                display: flex;
+            }
+        } 
+    }
+
+    &__heading {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: $dark-blue;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $light-grey;
+    }
+
+    &__list {
+        margin-top: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        @include mobile {
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        width: 360px;
+        min-height: 580px;
+        position: relative;
+        text-align: left;
+    }
+
+    &__item-heading {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $dark-blue;
+        margin-top: 25px;
+    }
+
+    &__item-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $light-grey;
+        margin-top: 13px;
+    }
+
+    &__item-price {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $dark-pink;
+        margin-top: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__item-img--mask {
+        position: absolute;
+        width: 360px;
+        height: 420px;
+        z-index: 999;
+        background-color: #9f9f9fed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        left: 0px;
+    }
+
+    &__item-button--add-to-cart {
+        width: 139px;
+        height: 44px;
+        border: 1px solid $white;
+        @include font($white, 14px, 17px, 400, normal);
+        padding: 3px;
+        background-color: transparent;
+        @include flex-around;
+    }
+
+    &__browse-button {
+        width: 212px;
+        height: 48px;
+        border: 1px solid $dark-pink;
+        padding: 15px;
+        @include font($dark-pink, 16px, 19px, 400, normal);
+        background-color: transparent;
+        text-align: center;
+        margin-top: 48px;
+    }
+}

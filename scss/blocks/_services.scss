@@ -1,0 +1,54 @@
+.services {
+    background-color: $dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 95px;
+    min-height: 340px;
+    @include tablet {
+        min-height: 610px;
+    }
+
+    @include mobile {
+        min-height: 610px;
+    }
+
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        @include mobile {
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        margin: 0px 15px;
+        flex-direction: column;
+        padding: 15px;
+        display: inline-flex;
+        min-height: 134px;
+        width: 360px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item-heading {
+        @include font($white, 19px, 24px, 400, normal, uppercase);
+        margin-top: 19px;
+    }
+
+    &__item-text {
+        @include font($white, 14px, 17px, 400, normal);
+        margin-top: 16px;
+        text-align: center;
+    }
+}

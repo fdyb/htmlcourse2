@@ -1,0 +1,141 @@
+.header {
+    background-color: $dark-blue;
+
+    &__wrapper {
+        min-height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menubox {
+        position: relative;
+    }
+
+    &__link {
+        margin: 0 0 0 34px;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+            ~ .header__navigation {
+                display: block;
+            }
+        }
+    }
+
+    &__logo {
+        margin: 0 41px 0 0;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__search {
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__navigation {
+        display: none;
+        position: absolute;
+        min-width: 232px;
+        min-height: 764px;
+        background-color: #FFF;
+        padding: 7px 33px;
+    }
+
+    &__navigation-cmd {
+        display: flex;
+        justify-content: flex-end;
+        padding: 13px 0px;
+    }
+
+    &__navigation-close-button {
+        width: 16px;
+        height: 16px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__navigation-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: $dark-blue;
+        margin-bottom: 24px;
+    }
+
+    &__navigation-list {
+        margin-bottom: 12px;
+    }
+
+    &__navigation-item {
+        margin-left: 3px;
+    }
+
+    &__navigation-item-link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: $dark-pink;
+        margin-bottom: 12px;
+    }
+
+    &__navigation-item-sub-list {
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+
+    &__navigation-item-sub-list-item {
+        margin-left: 21px;
+        margin-bottom: 12px;
+    }
+
+    &__navigation-item-sub-list-item-link {
+        text-decoration: none;
+        @include font($light-grey, 14px, 17px, 400, normal);
+    }
+
+    
+}
+
+@media (max-width: $desktop-width) {
+    .header {
+        padding: 0 16px;
+
+        &__link {
+            margin: 0 0 0 25px;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .header {
+        padding: 0;
+
+        &__link {
+            margin: 0 0 0 25px;
+
+            &--mobile-hidden {
+                display: none;
+            }
+        }
+
+    }
+}
