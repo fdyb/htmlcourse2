@@ -1,0 +1,21 @@
+.catalog {
+    &__filter {
+        margin: 51px 0px 64px 0px;
+        height: 17px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__filter-container {
+        @include flex-between;
+    }
+
+    &__filter--full {
+        min-width: 360px;
+        position: relative;
+    }
+
+    &__filter--fast {
+        flex-grow: 1;
+    }
+}

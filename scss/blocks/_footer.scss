@@ -12,5 +12,20 @@
     &__item {
         margin: 0px 3px;
         display: inline-flex;
+        &:hover .footer__item-icon {
+            fill: $dark-pink;
+        }
+        &:hover .footer__item-icon-grafics {
+            fill: white;
+        }
     }
+
+    &__item-icon {
+        fill: white;
+    }
+    
+    &__item-icon-grafics {
+        fill: $dark-blue;
+    }
+    
 }

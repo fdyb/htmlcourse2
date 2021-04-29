@@ -13,7 +13,7 @@
     &__item {
         &:hover {
             .products__item-img--mask {
-                display: flex;
+                display: block;
             }
         } 
     }
@@ -88,8 +88,6 @@
         z-index: 999;
         background-color: #9f9f9fed;
         display: none;
-        justify-content: center;
-        align-items: center;
         top: 0px;
         left: 0px;
     }
@@ -102,6 +100,14 @@
         padding: 3px;
         background-color: transparent;
         @include flex-around;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        &:hover {
+            background-color: $dark-pink;
+            transition: background-color .3s;
+        }
     }
 
     &__browse-button {
