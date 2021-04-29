@@ -53,6 +53,10 @@
         min-height: 764px;
         background-color: #FFF;
         padding: 7px 33px;
+        z-index: 1;
+        &:hover {
+            display: block;
+        }
     }
 
     &__navigation-cmd {
@@ -110,6 +114,12 @@
     &__navigation-item-sub-list-item-link {
         text-decoration: none;
         @include font($light-grey, 14px, 17px, 400, normal);
+        &:hover {
+            color: $dark-grey;
+            font-size: 110%;
+            font-weight: 700;
+            transition: color .2s, font-size .2s;
+        }
     }
 
     
