@@ -60,6 +60,45 @@ body {
     clip: rect(0 0 0 0);
 }
 
+.breadcrumb-item {
+    text-transform: uppercase;
+}
+
+.breadcrumb-item > a {
+    text-decoration: none;
+    @include font($thin-text, 14px, 17px, 300, normal, uppercase);
+}
+
+.breadcrumb-item.active {
+    color: $dark-pink;
+    font-weight: 700;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 47px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: rgba(42, 42, 42, .15);
+    width: 47px;
+    height: 47px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(/img/slider-arrow-left-icon.svg);
+}
+
+.carousel-control-next-icon {
+    background-image: url(/img/slider-arrow-right-icon.svg);
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    color: $dark-pink;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
 @media (max-width: $desktop-width) {
     .container {
         width: 96%;
