@@ -62,7 +62,7 @@
     }
 
     &__props {
-        @include flex-around;
+        display: flex;
     }
 
     &__props-group {
@@ -83,12 +83,13 @@
     &__props-options {
         display: none;
         position: absolute;
-        bottom: 20px;
+        z-index: 1;
         border: 1px solid $span-border;
         border-radius: 3px;
         list-style: none;
         padding: 7px;
-        min-width: 96%;
+        min-width: 180px;
+        background-color: white;
         &:hover {
             display: block;
         }
@@ -98,9 +99,16 @@
         @include font($dark-pink, 16px, 19px, 400, normal);
         padding: 7px 0 7px 5px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
         &:hover {
             color: #fff;
             background-color: $grey;
+        }
+
+        & > label {
+            margin-left: 9px;
+            @include font($dark-blue, 14px, 17px, 400, normal, uppercase);
         }
     }
 

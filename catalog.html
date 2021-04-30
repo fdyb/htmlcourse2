@@ -141,30 +141,61 @@
                 <div class="catalog__filter--fast">
                     <div class="product-content__props">
                         <div class="product-content__props-group">
-                            <button class="product-content__props-selector" type="button">choose color&nbsp;&nbsp;&nbsp;<img
+                            <button class="product-content__props-selector" type="button">trending now&nbsp;&nbsp;&nbsp;<img
                                     src="./img/down-arrow.svg" alt="down-arrow" width="10" height="10"></button>
                             <ul class="product-content__props-options">
-                                <li class="product-content__props-options-item">red</li>
-                                <li class="product-content__props-options-item">green</li>
-                                <li class="product-content__props-options-item">yellow</li>
+                                <li class="product-content__props-options-item">
+                                    <input type="checkbox" name="option-1-check-1" id="option-1-check-1">
+                                    <label for="option-1-check-1">option 1 </label>
+                                </li>
+                                <li class="product-content__props-options-item">
+                                    <input type="checkbox" name="option-1-check-1" id="option-1-check-1">
+                                    <label for="option-1-check-1">option 2  </label>
+                                </li>
+                                <li class="product-content__props-options-item">
+                                    <input type="checkbox" name="option-1-check-1" id="option-1-check-1">
+                                    <label for="option-1-check-1">option 3 </label>
+                                </li>
                             </ul>
                         </div>
                         <div class="product-content__props-group">
-                            <button class="product-content__props-selector" type="button">choose size&nbsp;&nbsp;&nbsp;<img
+                            <button class="product-content__props-selector" type="button">size&nbsp;&nbsp;&nbsp;<img
                                     src="./img/down-arrow.svg" alt="down-arrow" width="10" height="10"></button>
-                            <ul class="product-content__props-options">
-                                <li class="product-content__props-options-item">42</li>
-                                <li class="product-content__props-options-item">44</li>
-                                <li class="product-content__props-options-item">46</li>
-                            </ul>
+                                <ul class="product-content__props-options">
+                                    <li class="product-content__props-options-item">
+                                        <input type="checkbox" name="option-1-check-1" id="option-1-check-1">
+                                        <label for="option-1-check-1">XL </label>
+                                    </li>
+                                    <li class="product-content__props-options-item">
+                                        <input type="checkbox" name="option-1-check-1" id="option-1-check-1">
+                                        <label for="option-1-check-1">S  </label>
+                                    </li>
+                                    <li class="product-content__props-options-item">
+                                        <input type="checkbox" name="option-1-check-1" id="option-1-check-1">
+                                        <label for="option-1-check-1">M </label>
+                                    </li>
+                                    <li class="product-content__props-options-item">
+                                        <input type="checkbox" name="option-1-check-1" id="option-1-check-1">
+                                        <label for="option-1-check-1">L </label>
+                                    </li>
+                                </ul>
                         </div>
                         <div class="product-content__props-group">
-                            <button class="product-content__props-selector" type="button">quantity&nbsp;&nbsp;&nbsp;<img
+                            <button class="product-content__props-selector" type="button">price&nbsp;&nbsp;&nbsp;<img
                                     src="./img/down-arrow.svg" alt="down-arrow" width="10" height="10"></button>
                             <ul class="product-content__props-options">
-                                <li class="product-content__props-options-item">1</li>
-                                <li class="product-content__props-options-item">2</li>
-                                <li class="product-content__props-options-item">3</li>
+                                <li class="product-content__props-options-item">
+                                    <input type="checkbox" name="option-1-check-1" id="option-1-check-1">
+                                    <label for="option-1-check-1">option 1 </label>
+                                </li>
+                                <li class="product-content__props-options-item">
+                                    <input type="checkbox" name="option-1-check-1" id="option-1-check-1">
+                                    <label for="option-1-check-1">option 2  </label>
+                                </li>
+                                <li class="product-content__props-options-item">
+                                    <input type="checkbox" name="option-1-check-1" id="option-1-check-1">
+                                    <label for="option-1-check-1">option 3 </label>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -172,8 +203,92 @@
             </div>
 
         </section>
-        <section class="product-footer container">
-            <ul class="products__list">
+        <section class="catalog__products container">
+            <ul class="catalog__products-grid">
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-1.jpg" alt="product-1" width="360" height="420">
+                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
+                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="products__item-price">$52.00</p>
+                    <div class="products__item-img--mask">
+                        <button class="products__item-button--add-to-cart" type="button">
+                            <img src="./img/add-to-cart-button-icon.svg" alt="add-to-cart-button-icon.svg">&nbsp;Add to
+                            Cart
+                        </button>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-2.jpg" alt="product-2" width="360" height="420">
+                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
+                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="products__item-price">$52.00</p>
+                    <div class="products__item-img--mask">
+                        <button class="products__item-button--add-to-cart" type="button">
+                            <img src="./img/add-to-cart-button-icon.svg" alt="add-to-cart-button-icon.svg">&nbsp;Add to
+                            Cart
+                        </button>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-3.jpg" alt="product-3" width="360" height="420">
+                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
+                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="products__item-price">$52.00</p>
+                    <div class="products__item-img--mask">
+                        <button class="products__item-button--add-to-cart" type="button">
+                            <img src="./img/add-to-cart-button-icon.svg" alt="add-to-cart-button-icon.svg">&nbsp;Add to
+                            Cart
+                        </button>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-1.jpg" alt="product-1" width="360" height="420">
+                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
+                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="products__item-price">$52.00</p>
+                    <div class="products__item-img--mask">
+                        <button class="products__item-button--add-to-cart" type="button">
+                            <img src="./img/add-to-cart-button-icon.svg" alt="add-to-cart-button-icon.svg">&nbsp;Add to
+                            Cart
+                        </button>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-2.jpg" alt="product-2" width="360" height="420">
+                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
+                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="products__item-price">$52.00</p>
+                    <div class="products__item-img--mask">
+                        <button class="products__item-button--add-to-cart" type="button">
+                            <img src="./img/add-to-cart-button-icon.svg" alt="add-to-cart-button-icon.svg">&nbsp;Add to
+                            Cart
+                        </button>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-3.jpg" alt="product-3" width="360" height="420">
+                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
+                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="products__item-price">$52.00</p>
+                    <div class="products__item-img--mask">
+                        <button class="products__item-button--add-to-cart" type="button">
+                            <img src="./img/add-to-cart-button-icon.svg" alt="add-to-cart-button-icon.svg">&nbsp;Add to
+                            Cart
+                        </button>
+                    </div>
+                </li>
                 <li class="products__item">
                     <img class="products__item-img" src="./img/product-1.jpg" alt="product-1" width="360" height="420">
                     <h3 class="products__item-heading">ellery x m'o capsule</h3>
@@ -217,7 +332,26 @@
                     </div>
                 </li>
             </ul>
+            <ul class = "catalog__paginator">
+                <li><svg width="9" height="14" viewBox="0 0 9 14"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" class = "catalog__paginator--prev"/>
+                    </svg>
+                    </li>
+                <li class = 'catalog__paginator--active'>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>...</li>
+                <li>20</li>
+                <li><svg width="9" height="14" viewBox="0 0 9 14"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" class = "catalog__paginator--next"/>
+                    </svg>
+                    </li>
+            </ul>
         </section>
+        
     </main>
     <footer>
         <div class="subscribe">
