@@ -1,0 +1,76 @@
+.filter {
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    display: none;
+    padding: 17px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    &:hover {
+        display: block;
+        top: 0px;
+    }
+
+    &__toggle--open {
+        @include font($dark-pink, 14px, 17px, 600, normal, uppercase);
+        border: none;
+        background-color: transparent;
+        margin-bottom: 16px;
+    }
+
+    &__toggle-icon-grafics--open {
+        fill: $dark-pink;
+    }
+
+    &__toggle {
+        @include font($dark-blue, 14px, 17px, 600, normal, uppercase);
+        border: none;
+        background-color: transparent;
+
+        &:hover+.filter {
+            display: block;
+            top: 0px;
+        }
+    }
+
+    &__toggle-icon {
+        margin-left: 7px;
+    }
+
+    &__toggle-icon-grafics {
+        fill: $dark-blue;
+    }
+
+    &__menu {
+
+        background-color: white;
+        width: 360px;
+        list-style: none;
+    }
+
+    &__menu-chapter {
+        padding: 11px;
+        @include font($dark-pink, 14px, 17px, 400, normal, uppercase);
+        border-left: 3px solid $dark-pink;
+        border-bottom: 1px solid $span-border;
+        cursor: pointer;
+        transition: border-left .3s;
+        margin: 7px auto;
+        &:hover {
+            border-left: 25px solid $dark-pink;
+        }
+    }
+
+    &__menu-item {
+        padding: 11px;
+        @include font($dark-blue, 14px, 17px, 400, normal);
+        cursor: pointer;
+        background-color: white;
+        &:hover {
+            background-color: #F16D7D22;
+        }
+        transition: background-color .8s;
+        
+    }
+
+}
